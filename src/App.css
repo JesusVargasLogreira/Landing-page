@@ -57,7 +57,11 @@ header nav a:hover {
   align-items: center;
   box-sizing: border-box;
   height: 100vh;
-  background: url(https://wallpapercave.com/uwp/uwp4432522.png);
+  background-color: #122762;
+  background-image:
+    radial-gradient(ellipse at 18% 22%, rgba(35, 182, 214, .55), transparent 38%),
+    radial-gradient(ellipse at 85% 78%, rgba(44, 67, 151, .8), transparent 42%),
+    linear-gradient(135deg, #10204f, #1B2D6C 55%, #07183e);
   background-size: cover;
   background-position: center;
 }
@@ -163,13 +167,11 @@ header nav a:hover {
   margin: 0;
 }
 
-.img-benef {
-  width: 200px;
-  height: auto;
+.feature-icon {
   display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 15px;
+  font-size: 4rem;
+  line-height: 1.2;
 }
 
 @media (max-width: 640px) {
@@ -278,13 +280,8 @@ header nav a:hover {
   margin: 0;
 }
 
-.img-explicacion {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
+.paso-card .feature-icon {
+  font-size: 3rem;
 }
 
 .paso-explicacion {
@@ -373,12 +370,19 @@ header nav a:hover {
   align-items: center;
 }
 
-.img-testimonio {
+.avatar-testimonio {
+  display: grid;
+  place-items: center;
   width: 80px;
   height: 80px;
+  box-sizing: border-box;
   border-radius: 50%;
   margin-bottom: 15px;
   border: 3px solid #B5DFE9;
+  background-color: #23B6D6;
+  color: #1B2D6C;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .nombre-testimonio {
@@ -596,10 +600,14 @@ footer {
   align-items: center;
 }
 
-.img-redes {
-  width: 24px;
-  height: 24px;
-  display: block;
+.footer-redes a {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-redes a:hover {
+  color: #23B6D6;
 }
 
 .footer-bottom {

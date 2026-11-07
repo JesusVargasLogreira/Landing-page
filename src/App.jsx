@@ -16,7 +16,7 @@ function App() {
     <>
       <section id="header-section">
         <header>
-          <a href="/" aria-label="DigiApp, inicio"><img src="/logo.png" alt="DigiApp" className="logo" width="40" height="40" /></a>
+          <a href="/" aria-label="DigiApp, inicio"><img src="/logo.webp" alt="DigiApp" className="logo" width="40" height="42" /></a>
           <nav>
             <a href="https://digimonreactapi.netlify.app/">Descargar DigiApp</a>
           </nav>
@@ -36,17 +36,17 @@ function App() {
           <h2 className='titulo-beneficios'>Catálogo de Digimon, niveles y colección de favoritos</h2>
           <div className='beneficios'>
             <article className="beneficio-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/8270/8270486.png" alt="" className="img-benef" width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">📚</span>
               <h2 className='beneficio'>Catálogo Completo.</h2>
               <p>Explora el listado de criaturas con su imagen oficial y su nivel evolutivo exacto.</p>
             </article>
             <article className="beneficio-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/5726/5726470.png" alt="" className="img-benef" width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">🎮</span>
               <h2 className='beneficio'>Desafío de Trivia.</h2>
               <p>Pon a prueba tus conocimientos adivinando si cada Digimon es In-Training, Champion u Ultimate.</p>
             </article>
             <article className="beneficio-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="" className='img-benef' width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">💙</span>
               <h2 className='beneficio'>Colección de Favoritos.</h2>
               <p>Guarda a tus compañeros preferidos con un solo toque para acceder a ellos rápidamente.</p>
             </article>
@@ -66,17 +66,17 @@ function App() {
           <h2 className="titulo-explicacion">¿Cómo funciona DigiApp?</h2>
           <div className="explicacion">
             <article className="paso-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/1426/1426281.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">🔎</span>
               <h2 className="paso-explicacion">1. Explora el DigiMundo</h2>
               <p>Navega fácilmente por la base de datos completa con imágenes.</p>
             </article>
             <article className="paso-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/13728/13728197.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">✨</span>
               <h2 className="paso-explicacion">2. Conoce sus Niveles</h2>
               <p>Identifica sus niveles de evolución desde Fresh hasta Mega sin complicaciones.</p>
             </article>
             <article className="paso-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
+              <span className="feature-icon" aria-hidden="true">💙</span>
               <h2 className="paso-explicacion">3. Organiza tu Equipo</h2>
               <p>Guarda tus compañeros preferidos en tu lista personalizada para tenerlos siempre disponibles.</p>
             </article>
@@ -89,28 +89,28 @@ function App() {
           <h2 className="titulo-testimonios">Lo que dice la comunidad de DigiApp</h2>
           <div className="testimonios">
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
+              <span className="avatar-testimonio" aria-hidden="true">MD</span>
               <h3 className="nombre-testimonio">María Dolores</h3>
               <p className="texto-testimonio">"Increíble aplicación. Pude consultar los niveles de evolución de Agumon al instante antes de cada batalla."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/12743212/pexels-photo-12743212.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
+              <span className="avatar-testimonio" aria-hidden="true">HS</span>
               <h3 className="nombre-testimonio">Hugo Saez</h3>
               <p className="texto-testimonio">"Me encanta lo ordenada que está la información y lo fácil que es guardar a mis favoritos."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/40247492/pexels-photo-40247492/free-photo-of-retrato-de-un-hombre-pensativo-en-blanco-y-negro.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
+              <span className="avatar-testimonio" aria-hidden="true">GR</span>
               <h3 className="nombre-testimonio">Gabriel Ramirez</h3>
               <p className="texto-testimonio">"Procesamiento de datos eficiente. Como analista, aprecio la rapidez de respuesta del catálogo."</p>
 
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/39849151/pexels-photo-39849151/free-photo-of-un-perrito-pequeno-y-comodo-se-relaja-sobre-una-manta-blanca.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
+              <span className="avatar-testimonio" aria-hidden="true">CM</span>
               <h3 className="nombre-testimonio">Claudia Montero</h3>
               <p className="texto-testimonio">"¡La sección de trivias es súper divertida! Siempre pongo a prueba a mis amigos."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/40268447/pexels-photo-40268447/free-photo-of-dramatico-retrato-en-blanco-y-negro-de-un-hombre.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
+              <span className="avatar-testimonio" aria-hidden="true">JF</span>
               <h3 className="nombre-testimonio">Javier Flores</h3>
               <p className="texto-testimonio">"Sencilla, práctica y al grano. Tiene todo lo que necesitas sin rodeos."</p>
             </div>
@@ -225,13 +225,13 @@ function App() {
 
             <div className="footer-columna footer-redes">
               <a href="#" aria-label="Facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" className="img-redes" />
+                <span aria-hidden="true">Facebook</span>
               </a>
               <a href="#" aria-label="Instagram">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" className="img-redes" />
+                <span aria-hidden="true">Instagram</span>
               </a>
               <a href="#" aria-label="X (Twitter)">
-                <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="X" className="img-redes" />
+                <span aria-hidden="true">X</span>
               </a>
             </div>
           </div>

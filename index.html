@@ -9,7 +9,7 @@
     content="Explora gratis el catálogo de Digimon, consulta sus niveles evolutivos, juega trivias y guarda tus favoritos en DigiApp. Empieza tu aventura." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://landing-page-digiapp.netlify.app/" />
-  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="icon" type="image/webp" href="/logo.webp" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="DigiApp" />
@@ -66,9 +66,43 @@
   </noscript>
   <script type="module" src="/src/main.jsx"></script>
 
-  <script src="https://js.hsforms.net/forms/embed/52188170.js" defer></script>
   <div class="hs-form-frame" data-region="na1" data-form-id="3630b7ab-2b35-427b-b2bd-fbf5d3759ca9"
     data-portal-id="52188170"></div>
+  <script>
+    const initializeHubSpotForm = () => {
+      const formFrame = document.querySelector('.hs-form-frame');
+      const loadHubSpotForm = () => {
+        if (formFrame.dataset.loading) return;
+        formFrame.dataset.loading = 'true';
+        const script = document.createElement('script');
+        script.src = 'https://js.hsforms.net/forms/embed/52188170.js';
+        script.async = true;
+        script.onerror = () => {
+          delete formFrame.dataset.loading;
+          console.error('Unable to load the HubSpot form script.');
+        };
+        document.head.appendChild(script);
+      };
+
+      if ('IntersectionObserver' in window) {
+        const formObserver = new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            formObserver.disconnect();
+            loadHubSpotForm();
+          }
+        }, { rootMargin: '400px' });
+        formObserver.observe(formFrame);
+      } else {
+        loadHubSpotForm();
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      initializeHubSpotForm();
+    } else {
+      window.addEventListener('load', initializeHubSpotForm, { once: true });
+    }
+  </script>
 </body>
 
 </html>
