@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -71,7 +71,7 @@ header nav a:hover {
   border-radius: 10px;
   margin-bottom: -20px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -149,7 +149,7 @@ header nav a:hover {
   text-align: center;
 }
 
-.beneficios-container p {
+.beneficio-card {
   font-size: 1rem;
   font-weight: 400;
   color: white;
@@ -157,6 +157,10 @@ header nav a:hover {
   padding: 10px 10px;
   border-radius: 5px;
   max-width: 400px;
+}
+
+.beneficio-card p {
+  margin: 0;
 }
 
 .img-benef {
@@ -187,7 +191,7 @@ header nav a:hover {
     gap: 15px;
   }
 
-  .beneficios-container p {
+  .beneficio-card {
     font-size: 1.3rem;
     font-weight: 500;
     color: white;
@@ -260,7 +264,7 @@ header nav a:hover {
   flex: 1;
 }
 
-.explicacion-container p {
+.paso-card {
   font-size: 1rem;
   font-weight: 400;
   color: white;
@@ -268,6 +272,10 @@ header nav a:hover {
   padding: 20px;
   border-radius: 5px;
   max-width: 400px;
+}
+
+.paso-card p {
+  margin: 0;
 }
 
 .img-explicacion {
@@ -306,7 +314,7 @@ header nav a:hover {
     gap: 15px;
   }
 
-  .explicacion-container p {
+  .paso-card {
     font-size: 1.3rem;
     font-weight: 500;
     color: white;

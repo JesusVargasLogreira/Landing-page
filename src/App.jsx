@@ -16,7 +16,7 @@ function App() {
     <>
       <section id="header-section">
         <header>
-          <a href="#"><img src="logo.png" alt="logo" className='logo' /></a>
+          <a href="/" aria-label="DigiApp, inicio"><img src="/logo.png" alt="DigiApp" className="logo" width="40" height="40" /></a>
           <nav>
             <a href="https://digimonreactapi.netlify.app/">Descargar DigiApp</a>
           </nav>
@@ -25,32 +25,31 @@ function App() {
 
       <section id="hero-section">
         <div className="hero-container">
-          <h1>DigiApp</h1>
-          <h2>Toda la base de datos del DigiMundo, organizada en la palma de tu mano.</h2>
+          <h1>DigiApp: aplicación de Digimon gratis</h1>
+          <h2>Explora el catálogo de Digimon y descubre sus niveles evolutivos.</h2>
           <a href="https://digimonreactapi.netlify.app/" id='btn-cta-principal'>Descargar DigiApp Gratis</a>
         </div>
       </section>
 
       <section id="beneficios">
         <div className='beneficios-container'>
-          <h2 className='titulo-beneficios'>Toda la información que necesitas, al instante y sin distracciones.</h2>
+          <h2 className='titulo-beneficios'>Catálogo de Digimon, niveles y colección de favoritos</h2>
           <div className='beneficios'>
-            <img src="" alt="" />
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/8270/8270486.png" alt="lista" className='img-benef' />
+            <article className="beneficio-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/8270/8270486.png" alt="" className="img-benef" width="512" height="512" loading="lazy" decoding="async" />
               <h2 className='beneficio'>Catálogo Completo.</h2>
-              Explora el listado de criaturas con su imagen oficial y su nivel evolutivo exacto.
-            </p>
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/5726/5726470.png" alt="corazon" className='img-benef' />
+              <p>Explora el listado de criaturas con su imagen oficial y su nivel evolutivo exacto.</p>
+            </article>
+            <article className="beneficio-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/5726/5726470.png" alt="" className="img-benef" width="512" height="512" loading="lazy" decoding="async" />
               <h2 className='beneficio'>Desafío de Trivia.</h2>
-              Pon a prueba tus conocimientos adivinando si cada Digimon es In-Training, Champion u Ultimate.
-            </p>
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="corazon" className='img-benef' />
+              <p>Pon a prueba tus conocimientos adivinando si cada Digimon es In-Training, Champion u Ultimate.</p>
+            </article>
+            <article className="beneficio-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="" className='img-benef' width="512" height="512" loading="lazy" decoding="async" />
               <h2 className='beneficio'>Colección de Favoritos.</h2>
-              Guarda a tus compañeros preferidos con un solo toque para acceder a ellos rápidamente.
-            </p>
+              <p>Guarda a tus compañeros preferidos con un solo toque para acceder a ellos rápidamente.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -66,21 +65,21 @@ function App() {
         <div className="explicacion-container">
           <h2 className="titulo-explicacion">¿Cómo funciona DigiApp?</h2>
           <div className="explicacion">
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/1426/1426281.png" alt="buscar" className="img-explicacion" />
+            <article className="paso-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/1426/1426281.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
               <h2 className="paso-explicacion">1. Explora el DigiMundo</h2>
-              Navega fácilmente por la base de datos completa con imágenes.
-            </p>
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/13728/13728197.png" alt="nivel" className="img-explicacion" />
+              <p>Navega fácilmente por la base de datos completa con imágenes.</p>
+            </article>
+            <article className="paso-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/13728/13728197.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
               <h2 className="paso-explicacion">2. Conoce sus Niveles</h2>
-              Identifica sus niveles de evolución desde Fresh hasta Mega sin complicaciones.
-            </p>
-            <p>
-              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="guardar" className="img-explicacion" />
+              <p>Identifica sus niveles de evolución desde Fresh hasta Mega sin complicaciones.</p>
+            </article>
+            <article className="paso-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/753/753252.png" alt="" className="img-explicacion" width="512" height="512" loading="lazy" decoding="async" />
               <h2 className="paso-explicacion">3. Organiza tu Equipo</h2>
-              Guarda tus compañeros preferidos en tu lista personalizada para tenerlos siempre disponibles.
-            </p>
+              <p>Guarda tus compañeros preferidos en tu lista personalizada para tenerlos siempre disponibles.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -90,28 +89,28 @@ function App() {
           <h2 className="titulo-testimonios">Lo que dice la comunidad de DigiApp</h2>
           <div className="testimonios">
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="foto-usuario" className="img-testimonio" />
+              <img src="https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
               <h3 className="nombre-testimonio">María Dolores</h3>
               <p className="texto-testimonio">"Increíble aplicación. Pude consultar los niveles de evolución de Agumon al instante antes de cada batalla."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/12743212/pexels-photo-12743212.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="foto-usuario" className="img-testimonio" />
+              <img src="https://images.pexels.com/photos/12743212/pexels-photo-12743212.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
               <h3 className="nombre-testimonio">Hugo Saez</h3>
               <p className="texto-testimonio">"Me encanta lo ordenada que está la información y lo fácil que es guardar a mis favoritos."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/40247492/pexels-photo-40247492/free-photo-of-retrato-de-un-hombre-pensativo-en-blanco-y-negro.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="foto-usuario" className="img-testimonio" />
+              <img src="https://images.pexels.com/photos/40247492/pexels-photo-40247492/free-photo-of-retrato-de-un-hombre-pensativo-en-blanco-y-negro.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
               <h3 className="nombre-testimonio">Gabriel Ramirez</h3>
               <p className="texto-testimonio">"Procesamiento de datos eficiente. Como analista, aprecio la rapidez de respuesta del catálogo."</p>
 
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/39849151/pexels-photo-39849151/free-photo-of-un-perrito-pequeno-y-comodo-se-relaja-sobre-una-manta-blanca.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="foto-usuario" className="img-testimonio" />
+              <img src="https://images.pexels.com/photos/39849151/pexels-photo-39849151/free-photo-of-un-perrito-pequeno-y-comodo-se-relaja-sobre-una-manta-blanca.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
               <h3 className="nombre-testimonio">Claudia Montero</h3>
               <p className="texto-testimonio">"¡La sección de trivias es súper divertida! Siempre pongo a prueba a mis amigos."</p>
             </div>
             <div className="testimonio-card">
-              <img src="https://images.pexels.com/photos/40268447/pexels-photo-40268447/free-photo-of-dramatico-retrato-en-blanco-y-negro-de-un-hombre.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="foto-usuario" className="img-testimonio" />
+              <img src="https://images.pexels.com/photos/40268447/pexels-photo-40268447/free-photo-of-dramatico-retrato-en-blanco-y-negro-de-un-hombre.jpeg?auto=compress,format&w=160&h=160&fit=crop&dpr=1" alt="" className="img-testimonio" width="80" height="80" loading="lazy" decoding="async" />
               <h3 className="nombre-testimonio">Javier Flores</h3>
               <p className="texto-testimonio">"Sencilla, práctica y al grano. Tiene todo lo que necesitas sin rodeos."</p>
             </div>
