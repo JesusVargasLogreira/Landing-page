@@ -1,17 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [faqAbierta, setFaqAbierta] = useState(null)
-
-  const toggleFaq = (index) => {
-    if (faqAbierta === index) {
-      setFaqAbierta(null)
-    } else {
-      setFaqAbierta(index)
-    }
-  }
-
   return (
     <>
       <section id="header-section">
@@ -26,7 +15,11 @@ function App() {
       <section id="hero-section">
         <div className="hero-container">
           <h1>DigiApp: aplicación de Digimon gratis</h1>
-          <h2>Explora el catálogo de Digimon y descubre sus niveles evolutivos.</h2>
+          <h2>Explora el catálogo de Digimon, sus niveles evolutivos, trivias y favoritos.</h2>
+          <p className="hero-description">
+            DigiApp es una aplicación web gratuita para consultar criaturas Digimon, jugar trivias y guardar favoritos.
+            Requiere conexión a internet.
+          </p>
           <a href="https://digimonreactapi.netlify.app/" id='btn-cta-principal'>Descargar DigiApp Gratis</a>
         </div>
       </section>
@@ -130,53 +123,45 @@ function App() {
           <h2 className="titulo-faq">Preguntas Frecuentes</h2>
           <div className="faq-lista">
 
-            <div className="faq-item">
-              <button className="faq-pregunta" onClick={() => toggleFaq(0)}>
+            <details className="faq-item">
+              <summary className="faq-pregunta">
                 <span>¿La aplicación tiene algún costo o compras integradas?</span>
-                <span className="faq-icono">{faqAbierta === 0 ? '-' : '+'}</span>
-              </button>
-              {faqAbierta === 0 && (
-                <div className="faq-respuesta">
-                  <p>No, DigiApp es completamente gratis y no contiene compras integradas.</p>
-                </div>
-              )}
-            </div>
+                <span className="faq-icono" aria-hidden="true"></span>
+              </summary>
+              <div className="faq-respuesta">
+                <p>DigiApp es completamente gratis y no contiene compras integradas.</p>
+              </div>
+            </details>
 
-            <div className="faq-item">
-              <button className="faq-pregunta" onClick={() => toggleFaq(1)}>
+            <details className="faq-item">
+              <summary className="faq-pregunta">
                 <span>¿Puedo consultar la base de datos si no tengo conexión a internet?</span>
-                <span className="faq-icono">{faqAbierta === 1 ? '-' : '+'}</span>
-              </button>
-              {faqAbierta === 1 && (
-                <div className="faq-respuesta">
-                  <p>No, requiere conexión a internet para consultar la información y sincronizar los datos en tiempo real.</p>
-                </div>
-              )}
-            </div>
+                <span className="faq-icono" aria-hidden="true"></span>
+              </summary>
+              <div className="faq-respuesta">
+                <p>No. Se requiere una conexión a internet para consultar la información de DigiApp.</p>
+              </div>
+            </details>
 
-            <div className="faq-item">
-              <button className="faq-pregunta" onClick={() => toggleFaq(2)}>
+            <details className="faq-item">
+              <summary className="faq-pregunta">
                 <span>¿Cómo guardo a mis Digimon preferidos en la lista de Favoritos?</span>
-                <span className="faq-icono">{faqAbierta === 2 ? '-' : '+'}</span>
-              </button>
-              {faqAbierta === 2 && (
-                <div className="faq-respuesta">
-                  <p>Simplemente presiona el ícono de corazón que aparece junto a cada criatura para añadirla automáticamente a tu lista de Favoritos.</p>
-                </div>
-              )}
-            </div>
+                <span className="faq-icono" aria-hidden="true"></span>
+              </summary>
+              <div className="faq-respuesta">
+                <p>Presiona el ícono de corazón junto a una criatura para añadirla a tu lista de Favoritos.</p>
+              </div>
+            </details>
 
-            <div className="faq-item">
-              <button className="faq-pregunta" onClick={() => toggleFaq(3)}>
+            <details className="faq-item">
+              <summary className="faq-pregunta">
                 <span>¿En qué dispositivos puedo instalar la app y con qué frecuencia se actualiza?</span>
-                <span className="faq-icono">{faqAbierta === 3 ? '-' : '+'}</span>
-              </button>
-              {faqAbierta === 3 && (
-                <div className="faq-respuesta">
-                  <p>DigiApp es una PWA (Progressive Web App), por lo que puedes instalarla en cualquier dispositivo móvil o de escritorio sin importar el sistema operativo, recibiendo actualizaciones instantáneas sin descargas adicionales.</p>
-                </div>
-              )}
-            </div>
+                <span className="faq-icono" aria-hidden="true"></span>
+              </summary>
+              <div className="faq-respuesta">
+                <p>DigiApp es una PWA que puede instalarse en dispositivos móviles y de escritorio; recibe actualizaciones sin descargas adicionales.</p>
+              </div>
+            </details>
 
           </div>
         </div>
@@ -237,7 +222,7 @@ function App() {
           </div>
 
           <div className="footer-bottom">
-            <p className="copyright">&copy; {new Date().getFullYear()} DigiApp. Todos los derechos reservados.</p>
+            <p className="copyright">&copy; DigiApp. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
